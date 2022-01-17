@@ -1,0 +1,25 @@
+
+<div class="col-md-6 offset-md-4">
+  <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" [(ngModel)]="employee.nom" [ngModelOptions]="{standalone:true}" >
+       
+      </div>
+      <div class="mb-3">
+        <label for="prenom" class="form-label">Prenom</label>
+        <input type="prenom" class="form-control" id="prennom" [(ngModel)]="employee.prenom" [ngModelOptions]="{standalone:true}">
+      </div>
+      <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="email" [(ngModel)]="employee.email" [ngModelOptions]="{standalone:true}">
+          
+        </div>
+        
+     <div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  </form>
+  
+  </div>
+  

@@ -1,0 +1,28 @@
+<h6> la listen des client</h6>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th >Prenom</th>
+            <th >Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let employee of employees">
+<td>{{employee.nom}}</td>
+<td>{{employee.prenom}}</td>
+<td>{{employee.email}}</td>
+
+   <a> <button class="btn btn-primary mx-2" (click)="updateEmployee(employee.id)"> update</button>
+   </a>
+
+    <a> <button class="btn btn-danger mx-2"  (click)="deleteEmployee(employee.id)"> delete</button>
+    </a>
+
+    <a> <button class="btn btn-info mx-2"  (click)="detailEmployee(employee.id)">detail</button>
+    </a>
+</tr>
+    </tbody>
+</table>
+

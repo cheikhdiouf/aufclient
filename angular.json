@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "aufclient"
+    }
+  },
+  "defaultProject": "aufclient",
+  "cli": {
+    "analytics": "decfc5c7-d588-4c9d-9471-3283e6831c2a"
+  }
 }
